@@ -1,0 +1,128 @@
+/* font ---> Quicksand */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* utility classes */
+.grey-bg {
+  background-color: #dddddd73;
+}
+/* body of the html */
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+  color: #000;
+}
+/* whole calculator is surrounded by calculator div  */
+.calculator {
+  width: 375px;
+  height: 90vh;
+  max-height: 580px;
+  box-shadow: 1px 1px 28px #00000042;
+}
+/* display part of the calculator */
+.display {
+  height: 30%;
+  background: linear-gradient(to right, #e04b8f, #f7b22e);
+  font-size: 36px;
+  color: #fff;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  letter-spacing: 2px;
+}
+/* btns part of the calculator --- container */
+.btns-div {
+  height: 70%;
+  font-size: 28px;
+}
+/* direct children of btns-div --- contain rows of buttons */
+.btn-rows {
+  display: flex;
+  height: 20%;
+}
+/* This code is for row1 to make it scrollable horizontally */
+.row1::-webkit-scrollbar {
+  display: none;
+}
+.row1 {
+  overflow-x: auto;
+  height: 20%;
+}
+.container-row1 {
+  display: inline-flex;
+  height: 100%;
+}
+.container-row1 .buttons {
+  width: 93.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* row1 codes ends here  */
+
+/* all the buttons */
+.buttons {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* custom changes in the buttons */
+#btn-equalTo {
+  color: #fff;
+  background: linear-gradient(to right, #e04b8f, #f7b22e);
+  font-size: 40px;
+  font-weight: 400;
+}
+#btn-zero {
+  width: 50%;
+  padding-right: 25%;
+}
+#btn-divide {
+  /* padding-top: 1.7%; */
+  font-size: 32px;
+}
+#btn-add,
+#btn-backspace {
+  font-size: 31px;
+}
+#btn-minus {
+  font-size: 22px;
+  font-weight: 800;
+}
+#mod {
+  font-size: 25px;
+  position: relative;
+  top: 1%;
+}
+/* media querries */
+@media (max-width: 800px) {
+  .calculator {
+    max-height: 750px;
+  }
+}
+@media (max-width: 510px) {
+  .calculator {
+    max-height: 950px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  .container-row1 .buttons {
+    width: 25vw;
+  }
+}

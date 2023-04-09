@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display"></div>
+      <div class="btns-div">
+        <div class="row1">
+          <div class="container-row1">
+            <div
+              class="buttons grey-bg"
+              style="color: #e04b8f"
+              data-value="Delete"
+            >
+              AC
+            </div>
+            <div
+              class="buttons grey-bg"
+              id="btn-backspace"
+              data-value="Backspace"
+            >
+              ←
+            </div>
+            <div class="buttons grey-bg" id="mod" data-value="%">mod</div>
+            <div class="buttons grey-bg" id="btn-divide" data-value="/">÷</div>
+            <div class="buttons grey-bg" data-value="(">(</div>
+            <div class="buttons grey-bg" data-value=")">)</div>
+          </div>
+        </div>
+        <div class="btn-rows row2">
+          <div class="buttons" data-value="7">7</div>
+          <div class="buttons" data-value="8">8</div>
+          <div class="buttons" data-value="9">9</div>
+          <div class="buttons grey-bg" id="btn-multiply" data-value="*">x</div>
+        </div>
+        <div class="btn-rows row3">
+          <div class="buttons" data-value="4">4</div>
+          <div class="buttons" data-value="5">5</div>
+          <div class="buttons" data-value="6">6</div>
+          <div class="buttons grey-bg" id="btn-minus" data-value="-">—</div>
+        </div>
+        <div class="btn-rows row4">
+          <div class="buttons" data-value="1">1</div>
+          <div class="buttons" data-value="2">2</div>
+          <div class="buttons" data-value="3">3</div>
+          <div class="buttons grey-bg" id="btn-plus" data-value="+">+</div>
+        </div>
+        <div class="btn-rows row5">
+          <div class="buttons" id="btn-zero" data-value="0">0</div>
+          <div class="buttons grey-bg" data-value=".">.</div>
+          <div class="buttons" id="btn-equalTo" data-value="Enter">=</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
